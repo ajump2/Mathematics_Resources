@@ -7,5 +7,5 @@ Constructing a continuous function from discrete data points using a least squar
 ![Alt Text](https://github.com/ajump2/Mathematics_Resources/raw/master/Images/MeltWater.gif)
 
 Showing results of first and second derivative tests, and how to sketch a function
-:--------------------------:
+:--------------------------:|:--------------------------:
 ![Alt Text](https://github.com/ajump2/Mathematics_Resources/raw/master/Images/curvesketch1.png) | ![Alt Text](https://github.com/ajump2/Mathematics_Resources/raw/master/Images/curvesketch2.png)
