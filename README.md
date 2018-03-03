@@ -1,5 +1,5 @@
 # Introduction
-Some resources I've developed for my students in Calculus One and Two. STL files included should the reader wish to demonstrate volumes of revolution.
+Some resources I've developed for my students in Calculus One and Two. STL files included should the reader wish to demonstrate volumes of revolution. I've also added a section on statistics, just to illustrate some of the samples we've been working with.
 
 # Samples
 Constructing a continuous function from discrete data points using a least squares fit, and showing instantaneous rate of change
