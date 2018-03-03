@@ -1,0 +1,908 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36623,        900]
+NotebookOptionsPosition[     33733,        821]
+NotebookOutlinePosition[     34095,        837]
+CellTagsIndexPosition[     34052,        834]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", 
+    RowBox[{"20", ",", "\"\<DegreesFahrenheit\>\""}], "]"}], ",", 
+   "\"\<Kelvin\>\""}], "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"9f351876-56ab-4898-b0c9-663aaf9003cd"],
+
+Cell[BoxData[
+ TemplateBox[{FractionBox["15989", "60"],"\"K\"","kelvins","\"Kelvins\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.726474941182452*^9},ExpressionUUID->"21185427-d19d-4055-b199-\
+3533ec12ad3e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"QuantityMagnitude", "[", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{
+    FractionBox["15989", "60"], ",", "\"\<Kelvins\>\""}], "]"}], 
+  "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"ce53b26c-14a3-4c9f-93f3-824af60ce884"],
+
+Cell[BoxData[
+ FractionBox["15989", "60"]], "Output",
+ CellChangeTimes->{
+  3.726475069053885*^9},ExpressionUUID->"fbe4497c-e2f8-4f08-955e-\
+5d5c6e3ff11f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ThermometerGauge", "[", 
+  RowBox[{
+   TemplateBox[{FractionBox["15989", "60"],"\"K\"","kelvins","\"Kelvins\""},
+    "Quantity"], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"200","\"K\"","kelvins","\"Kelvins\""},
+      "Quantity"], ",", 
+     TemplateBox[{"300","\"K\"","kelvins","\"Kelvins\""},
+      "Quantity"]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7264747424588213`*^9, 3.726474807979479*^9}, {
+  3.72647485651828*^9, 3.726474857012722*^9}, {3.726476248358508*^9, 
+  3.726476256632019*^9}},ExpressionUUID->"4e5d413b-6be6-4848-b74d-\
+b70cc195611f"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   {Opacity[0], PointBox[{{-0.22, -0.15}, {0.13, 1.1}}]}, 
+   GeometricTransformationBox[{}, {{{0, -1}, {1, 0}}, {0, 0}}], {
+    {GrayLevel[0.5], AbsoluteThickness[0.5], CapForm["Butt"], 
+     StyleBox[{{
+        {GrayLevel[0.5], AbsoluteThickness[1], CapForm["Butt"], 
+         LineBox[{{{0., 0.}, Scaled[{-0.1, 0.}, {0., 0.}]}, {{0., 0.2}, 
+            Scaled[{-0.1, 0.}, {0., 0.2}]}, {{0., 0.4}, 
+            Scaled[{-0.1, 0.}, {0., 0.4}]}, {{0., 0.6}, 
+            Scaled[{-0.1, 0.}, {0., 0.6}]}, {{0., 0.8}, 
+            Scaled[{-0.1, 0.}, {0., 0.8}]}, {{0., 1.}, 
+            Scaled[{-0.1, 0.}, {0., 1.}]}}]}, 
+        {GrayLevel[0.5], AbsoluteThickness[0.5], CapForm["Butt"], 
+         LineBox[{{{0., 0.05}, Scaled[{-0.065, 0.}, {0., 0.05}]}, {{0., 0.1}, 
+            Scaled[{-0.065, 0.}, {0., 0.1}]}, {{0., 0.15}, 
+            Scaled[{-0.065, 0.}, {0., 0.15}]}, {{0., 0.25}, 
+            Scaled[{-0.065, 0.}, {0., 0.25}]}, {{0., 0.3}, 
+            Scaled[{-0.065, 0.}, {0., 0.3}]}, {{0., 0.35}, 
+            Scaled[{-0.065, 0.}, {0., 0.35}]}, {{0., 0.45}, 
+            Scaled[{-0.065, 0.}, {0., 0.45}]}, {{0., 0.5}, 
+            Scaled[{-0.065, 0.}, {0., 0.5}]}, {{0., 0.55}, 
+            Scaled[{-0.065, 0.}, {0., 0.55}]}, {{0., 0.65}, 
+            Scaled[{-0.065, 0.}, {0., 0.65}]}, {{0., 0.7}, 
+            Scaled[{-0.065, 0.}, {0., 0.7}]}, {{0., 0.75}, 
+            Scaled[{-0.065, 0.}, {0., 0.75}]}, {{0., 0.85}, 
+            Scaled[{-0.065, 0.}, {0., 0.85}]}, {{0., 0.9}, 
+            Scaled[{-0.065, 0.}, {0., 0.9}]}, {{0., 0.95}, 
+            Scaled[{-0.065, 0.}, {0., 0.95}]}}]}}, 
+       {GrayLevel[0.5], AbsoluteThickness[
+        1], {{InsetBox["200", Offset[{-3., 0.}, 
+           Scaled[{-0.1, 0.}, {0., 0.}]], {1, 0.}, Automatic, {1, 0}], 
+          InsetBox["220", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.2}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["240", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.4}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["260", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.6}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["280", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.8}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["300", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 1.}]], {1, 0.},
+            Automatic, {1, 
+           0}]}, {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}}}, {}}},
+      StripOnInput->False,
+      Antialiasing->False]}, {}}, {}, 
+   GeometricTransformationBox[GraphicsGroupBox[{
+      TagBox[
+       TooltipBox[{
+         {Hue[0.014999999999999977`, 0.7299999999999999, 0.8], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.004687499999999997, -0.049218750000000006`}, {
+           0.0703125, -0.049218750000000006`}, {0.0703125, 
+           0.6648333333333334}, {0.004687499999999997, 0.6648333333333334}}]}, 
+         {Hue[0.014999999999999977`, 0.7299999999999999, 0.6], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.004687499999999997, -0.049218750000000006`}, {
+           0.06375, -0.049218750000000006`}, {0.06375, 0.6648333333333334}, {
+           0.004687499999999997, 0.6648333333333334}}]}, 
+         {Hue[0.014999999999999977`, 0.7299999999999999, 0.7], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.014531249999999997`, -0.049218750000000006`}, {
+           0.050624999999999996`, -0.049218750000000006`}, {
+           0.050624999999999996`, 0.6648333333333334}, {0.014531249999999997`,
+            0.6648333333333334}}]}, 
+         {Hue[0.014999999999999977`, 0.7299999999999999, 1], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.021093749999999998`, -0.049218750000000006`}, {
+           0.0375, -0.049218750000000006`}, {0.0375, 0.6648333333333334}, {
+           0.021093749999999998`, 0.6648333333333334}}]}},
+        DynamicBox[
+         ToBoxes[
+          Rational[15989, 60], StandardForm]]],
+       Annotation[#, 
+        Dynamic[
+         Rational[15989, 60]], "Tooltip"]& ], 
+      {Hue[0., 0., 0.8], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.004687499999999997, Rational[3989, 6000]}, {
+          0.0703125, Rational[3989, 6000]}, {0.0703125, 1}, {
+          0.004687499999999997, 1}}, {{0.004687499999999997, 
+          0.6648333333333334}, {0.0703125, 0.6648333333333334}, {
+          0.0703125, 1}, {0.004687499999999997, 1}}]]}, 
+      {Hue[0., 0., 0.6], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.004687499999999997, Rational[3989, 6000]}, {
+          0.06375, Rational[3989, 6000]}, {0.06375, 1}, {
+          0.004687499999999997, 1}}, {{0.004687499999999997, 
+          0.6648333333333334}, {0.06375, 0.6648333333333334}, {0.06375, 1}, {
+          0.004687499999999997, 1}}]]}, 
+      {Hue[0., 0., 0.7], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.014531249999999997`, Rational[3989, 6000]}, {
+          0.050624999999999996`, Rational[3989, 6000]}, {
+          0.050624999999999996`, 1}, {0.014531249999999997`, 1}}, {{
+          0.014531249999999997`, 0.6648333333333334}, {0.050624999999999996`, 
+          0.6648333333333334}, {0.050624999999999996`, 1}, {
+          0.014531249999999997`, 1}}]]}, 
+      {Hue[0., 0., 1], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.021093749999999998`, Rational[3989, 6000]}, {
+          0.0375, Rational[3989, 6000]}, {0.0375, 1}, {
+          0.021093749999999998`, 1}}, {{0.021093749999999998`, 
+          0.6648333333333334}, {0.0375, 0.6648333333333334}, {0.0375, 1}, {
+          0.021093749999999998`, 1}}]]}, 
+      {Hue[0.014999999999999977`, 0.7299999999999999, 1], AbsoluteThickness[
+       2], Opacity[1], CapForm["Butt"], 
+       LineBox[{{0.004687499999999997, 0.6648333333333334}, {0.0703125, 
+        0.6648333333333334}}]}, 
+      {FaceForm[None], 
+       PolygonBox[{{0.004687499999999997, -0.049218750000000006`}, {
+         0.004687499999999997, 1}, {0.0703125, 1}, {
+         0.0703125, -0.049218750000000006`}}]}, 
+      {FaceForm[None], 
+       DiskBox[{0.0375, -0.049218750000000006}, 0.049218750000000006, {
+        2.3005239830218627`, 7.124253977747516}]}, 
+      TagBox[
+       TooltipBox[
+        {EdgeForm[None], PolygonBox[CompressedData["
+1:eJxTTMoPSmViYGAwAWIQfQYMZtqbGIPAzP1gynixPQMUeE3k+LA/epk9Q++q
+4IB8y/3ectfDespX2itoXghbEhq5fwrTnB7uqjX2Cm9ZrLICcvYLCbbeEQtf
+b38hdrbL4fcV+/8wRif3M260D9nrbuPu0Lyfo9v72hrLTfYdi/p4XwZ2768z
+kl//3W+z/YNt+Sck3SbtDyrqzxGw3WKfGHrg+KeU6fs9Sg+fNmXYah8qcMbl
+8oc5+1dv0f8YPHWr/YeO1RmrMxfu33Mi8arAr6323q9k5sRWLdn/c23f4as6
+2+xrNpaYKMxbDue/2fLR0O3EKrh62RrPUxxv1sLN25N3ty62bgPcPnl9hqR/
+3zbC3XNH1rnxW+RmuHtrXMUPrlm4Be6fx3GNgt9ObIX7t8t6lbfW6W3w8Aiv
+ffnPbMl2eHid5k5+uD5gBzw8J3y6vvDO2R37YeG9vOP+o8OSO+HxAYmfnftl
+rsaWLeNaAJc3myAnv+XuTLj+xcenbN56YzLc/IDQVnU72x64/Xs6D9bJ9TbC
+3VfA+nXOaYN8uPsZvP+/rj5ivR/mvw8fD0+9PLdgP8z/EYosnZoXavbDwucA
+95P3rILN+2Hh57OmRPCtWdt+WPgaXLvdJHK2fT8s/GF8WPzA1MPiD2YeLH5h
+9sHiH+YeWPqAuReWfmD+gaUvmH9h6Q8WHrD0CQsvWPqFhScsfcPCG5b+0fMH
+AK5ooPk=
+          "],
+          VertexColors->{
+            Hue[0.014999999999999977`, 0.7299999999999999, 1, 1], 
+            Hue[0.014999999999999977`, 0.7299999999999999, 1, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.9560466363294806, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.912266736504987, 1], 
+            
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8688330797899928, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8259170789846016, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7836881039375367, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7423128131207255, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7019544959044491, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6627724281287992, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6249212435147024, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5885503233952688, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5538032071759174, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5208170258499181, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.48972196080501196`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4606407300569476, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4336881039375369, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4089704521485895, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.38658532396929557`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3666210632737864, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.34915645987822397`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3342604385933926, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.32199178720995825`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3123989244899179, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3055197090798655, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.30138129010021, 1], 
+            Hue[0.014999999999999977`, 0.7299999999999999, 0.3, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.30138129010021, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3055197090798655, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3123989244899179, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.32199178720995825`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3342604385933926, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.34915645987822397`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3666210632737864, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.38658532396929557`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4089704521485895, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4336881039375369, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4606407300569476, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.48972196080501196`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5208170258499181, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5538032071759174, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5885503233952688, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6249212435147024, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6627724281287992, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7019544959044491, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7423128131207255, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7836881039375367, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8259170789846016, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8688330797899928, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.912266736504987, 1], 
+            
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.9560466363294806, 1], 
+            Hue[0.014999999999999977`, 0.7299999999999999, 1, 1]}]},
+        DynamicBox[
+         ToBoxes[
+          Rational[15989, 60], StandardForm]]],
+       Annotation[#, 
+        Dynamic[
+         Rational[15989, 60]], "Tooltip"]& ]}], {{{1, 0}, {0, 1}}, {0, 
+     0}}], {}, GeometricTransformationBox[{}, {{{0, -1}, {1, 0}}, {0, 0}}]},
+  AlignmentPoint->Center,
+  AspectRatio->Automatic,
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->{},
+  BaselinePosition->Automatic,
+  ColorOutput->Automatic,
+  ContentSelectable->Automatic,
+  CoordinatesToolOptions:>Automatic,
+  DisplayFunction->Identity,
+  Epilog->{},
+  FormatType->TraditionalForm,
+  Frame->False,
+  FrameLabel->None,
+  FrameStyle->{},
+  FrameTicks->Automatic,
+  FrameTicksStyle->{},
+  GridLines->None,
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->Small,
+  ImageSizeRaw->Automatic,
+  LabelStyle->{},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
+  PlotLabel->None,
+  PlotRange->All,
+  PlotRangeClipping->False,
+  PlotRangePadding->Automatic,
+  PlotRegion->Automatic,
+  PreserveImageOptions->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{{3.726476251095694*^9, 
+  3.726476257667201*^9}},ExpressionUUID->"f6d31fe6-3733-4a01-9a94-\
+21fa54575751"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", 
+    RowBox[{"40", ",", "\"\<DegreesFahrenheit\>\""}], "]"}], ",", 
+   "\"\<Kelvin\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.726473284586244*^9, 3.726473285153769*^9}},
+ NumberMarks->False,ExpressionUUID->"f42f4815-b5f4-4ec2-aae7-355b65dc9d1e"],
+
+Cell[BoxData[
+ TemplateBox[{FractionBox["49967", "180"],"\"K\"","kelvins","\"Kelvins\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.7264750908700943`*^9},ExpressionUUID->"0ae09b2c-152c-4f4c-9562-\
+46a41b45b180"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"QuantityMagnitude", "[", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{
+    FractionBox["49967", "180"], ",", "\"\<Kelvins\>\""}], "]"}], 
+  "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"adb88229-57cd-4858-91fb-d836b5991f06"],
+
+Cell[BoxData[
+ FractionBox["49967", "180"]], "Output",
+ CellChangeTimes->{
+  3.726475093640388*^9},ExpressionUUID->"cd2742f8-7adc-472f-8aa5-\
+e286a75de962"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      FractionBox["15989", "60"], "x"}], "==", 
+     FractionBox["49967", "180"]}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7264750406098347`*^9, 3.726475047116171*^9}, {
+  3.726475087682766*^9, 
+  3.726475132477055*^9}},ExpressionUUID->"b8af9290-a036-44c8-9cc7-\
+12c21ad90309"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   FractionBox["49967", "47967"], "}"}], "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.726475463642364*^9, 
+  3.726475466560033*^9}},ExpressionUUID->"ada4dc01-a013-47ff-83de-\
+be874be4f4bb"],
+
+Cell[BoxData[
+ FractionBox["49967", "47967"]], "Output",
+ CellChangeTimes->{
+  3.7264754682916203`*^9},ExpressionUUID->"178085f1-abfa-4630-b7cc-\
+9721999aa902"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"{", 
+   FractionBox["49967", "47967"], "}"}], "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"df6c8b9a-d27e-4547-aeae-e728e15ab3e6"],
+
+Cell[BoxData[
+ RowBox[{"{", "1.0416953322075593`", "}"}]], "Output",
+ CellChangeTimes->{
+  3.726475134594111*^9},ExpressionUUID->"750eac56-aa81-41cd-998c-\
+fa76cef775a9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ThermometerGauge", "[", 
+  RowBox[{
+   TemplateBox[{FractionBox["49967", "180"],"\"K\"","kelvins","\"Kelvins\""},
+    "Quantity"], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"200","\"K\"","kelvins","\"Kelvins\""},
+      "Quantity"], ",", 
+     TemplateBox[{"300","\"K\"","kelvins","\"Kelvins\""},
+      "Quantity"]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7264747424588213`*^9, 3.7264748617723083`*^9}, {
+  3.726476271395915*^9, 
+  3.726476271852251*^9}},ExpressionUUID->"56b276c5-ffa1-477b-b462-\
+3150d494d796"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   {Opacity[0], PointBox[{{-0.22, -0.15}, {0.13, 1.1}}]}, 
+   GeometricTransformationBox[{}, {{{0, -1}, {1, 0}}, {0, 0}}], {
+    {GrayLevel[0.5], AbsoluteThickness[0.5], CapForm["Butt"], 
+     StyleBox[{{
+        {GrayLevel[0.5], AbsoluteThickness[1], CapForm["Butt"], 
+         LineBox[{{{0., 0.}, Scaled[{-0.1, 0.}, {0., 0.}]}, {{0., 0.2}, 
+            Scaled[{-0.1, 0.}, {0., 0.2}]}, {{0., 0.4}, 
+            Scaled[{-0.1, 0.}, {0., 0.4}]}, {{0., 0.6}, 
+            Scaled[{-0.1, 0.}, {0., 0.6}]}, {{0., 0.8}, 
+            Scaled[{-0.1, 0.}, {0., 0.8}]}, {{0., 1.}, 
+            Scaled[{-0.1, 0.}, {0., 1.}]}}]}, 
+        {GrayLevel[0.5], AbsoluteThickness[0.5], CapForm["Butt"], 
+         LineBox[{{{0., 0.05}, Scaled[{-0.065, 0.}, {0., 0.05}]}, {{0., 0.1}, 
+            Scaled[{-0.065, 0.}, {0., 0.1}]}, {{0., 0.15}, 
+            Scaled[{-0.065, 0.}, {0., 0.15}]}, {{0., 0.25}, 
+            Scaled[{-0.065, 0.}, {0., 0.25}]}, {{0., 0.3}, 
+            Scaled[{-0.065, 0.}, {0., 0.3}]}, {{0., 0.35}, 
+            Scaled[{-0.065, 0.}, {0., 0.35}]}, {{0., 0.45}, 
+            Scaled[{-0.065, 0.}, {0., 0.45}]}, {{0., 0.5}, 
+            Scaled[{-0.065, 0.}, {0., 0.5}]}, {{0., 0.55}, 
+            Scaled[{-0.065, 0.}, {0., 0.55}]}, {{0., 0.65}, 
+            Scaled[{-0.065, 0.}, {0., 0.65}]}, {{0., 0.7}, 
+            Scaled[{-0.065, 0.}, {0., 0.7}]}, {{0., 0.75}, 
+            Scaled[{-0.065, 0.}, {0., 0.75}]}, {{0., 0.85}, 
+            Scaled[{-0.065, 0.}, {0., 0.85}]}, {{0., 0.9}, 
+            Scaled[{-0.065, 0.}, {0., 0.9}]}, {{0., 0.95}, 
+            Scaled[{-0.065, 0.}, {0., 0.95}]}}]}}, 
+       {GrayLevel[0.5], AbsoluteThickness[
+        1], {{InsetBox["200", Offset[{-3., 0.}, 
+           Scaled[{-0.1, 0.}, {0., 0.}]], {1, 0.}, Automatic, {1, 0}], 
+          InsetBox["220", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.2}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["240", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.4}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["260", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.6}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["280", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 0.8}]], {1, 0.},
+            Automatic, {1, 0}], 
+          InsetBox["300", Offset[{-3., 0.}, Scaled[{-0.1, 0.}, {0., 1.}]], {1, 0.},
+            Automatic, {1, 
+           0}]}, {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}}}, {}}},
+      StripOnInput->False,
+      Antialiasing->False]}, {}}, {}, 
+   GeometricTransformationBox[GraphicsGroupBox[{
+      TagBox[
+       TooltipBox[{
+         {Hue[0.014999999999999977`, 0.7299999999999999, 0.8], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.004687499999999997, -0.049218750000000006`}, {
+           0.0703125, -0.049218750000000006`}, {0.0703125, 
+           0.7759444444444444}, {0.004687499999999997, 0.7759444444444444}}]}, 
+         {Hue[0.014999999999999977`, 0.7299999999999999, 0.6], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.004687499999999997, -0.049218750000000006`}, {
+           0.06375, -0.049218750000000006`}, {0.06375, 0.7759444444444444}, {
+           0.004687499999999997, 0.7759444444444444}}]}, 
+         {Hue[0.014999999999999977`, 0.7299999999999999, 0.7], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.014531249999999997`, -0.049218750000000006`}, {
+           0.050624999999999996`, -0.049218750000000006`}, {
+           0.050624999999999996`, 0.7759444444444444}, {0.014531249999999997`,
+            0.7759444444444444}}]}, 
+         {Hue[0.014999999999999977`, 0.7299999999999999, 1], Opacity[1], 
+          EdgeForm[None], 
+          PolygonBox[{{0.021093749999999998`, -0.049218750000000006`}, {
+           0.0375, -0.049218750000000006`}, {0.0375, 0.7759444444444444}, {
+           0.021093749999999998`, 0.7759444444444444}}]}},
+        DynamicBox[
+         ToBoxes[
+          Rational[49967, 180], StandardForm]]],
+       Annotation[#, 
+        Dynamic[
+         Rational[49967, 180]], "Tooltip"]& ], 
+      {Hue[0., 0., 0.8], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.004687499999999997, Rational[13967, 18000]}, {
+          0.0703125, Rational[13967, 18000]}, {0.0703125, 1}, {
+          0.004687499999999997, 1}}, {{0.004687499999999997, 
+          0.7759444444444444}, {0.0703125, 0.7759444444444444}, {
+          0.0703125, 1}, {0.004687499999999997, 1}}]]}, 
+      {Hue[0., 0., 0.6], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.004687499999999997, Rational[13967, 18000]}, {
+          0.06375, Rational[13967, 18000]}, {0.06375, 1}, {
+          0.004687499999999997, 1}}, {{0.004687499999999997, 
+          0.7759444444444444}, {0.06375, 0.7759444444444444}, {0.06375, 1}, {
+          0.004687499999999997, 1}}]]}, 
+      {Hue[0., 0., 0.7], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.014531249999999997`, Rational[13967, 18000]}, {
+          0.050624999999999996`, Rational[13967, 18000]}, {
+          0.050624999999999996`, 1}, {0.014531249999999997`, 1}}, {{
+          0.014531249999999997`, 0.7759444444444444}, {0.050624999999999996`, 
+          0.7759444444444444}, {0.050624999999999996`, 1}, {
+          0.014531249999999997`, 1}}]]}, 
+      {Hue[0., 0., 1], Opacity[1], EdgeForm[None], 
+       PolygonBox[
+        NCache[{{0.021093749999999998`, Rational[13967, 18000]}, {
+          0.0375, Rational[13967, 18000]}, {0.0375, 1}, {
+          0.021093749999999998`, 1}}, {{0.021093749999999998`, 
+          0.7759444444444444}, {0.0375, 0.7759444444444444}, {0.0375, 1}, {
+          0.021093749999999998`, 1}}]]}, 
+      {Hue[0.014999999999999977`, 0.7299999999999999, 1], AbsoluteThickness[
+       2], Opacity[1], CapForm["Butt"], 
+       LineBox[{{0.004687499999999997, 0.7759444444444444}, {0.0703125, 
+        0.7759444444444444}}]}, 
+      {FaceForm[None], 
+       PolygonBox[{{0.004687499999999997, -0.049218750000000006`}, {
+         0.004687499999999997, 1}, {0.0703125, 1}, {
+         0.0703125, -0.049218750000000006`}}]}, 
+      {FaceForm[None], 
+       DiskBox[{0.0375, -0.049218750000000006}, 0.049218750000000006, {
+        2.3005239830218627`, 7.124253977747516}]}, 
+      TagBox[
+       TooltipBox[
+        {EdgeForm[None], PolygonBox[CompressedData["
+1:eJxTTMoPSmViYGAwAWIQfQYMZtqbGIPAzP1gynixPQMUeE3k+LA/epk9Q++q
+4IB8y/3ectfDespX2itoXghbEhq5fwrTnB7uqjX2Cm9ZrLICcvYLCbbeEQtf
+b38hdrbL4fcV+/8wRif3M260D9nrbuPu0Lyfo9v72hrLTfYdi/p4XwZ2768z
+kl//3W+z/YNt+Sck3SbtDyrqzxGw3WKfGHrg+KeU6fs9Sg+fNmXYah8qcMbl
+8oc5+1dv0f8YPHWr/YeO1RmrMxfu33Mi8arAr6323q9k5sRWLdn/c23f4as6
+2+xrNpaYKMxbDue/2fLR0O3EKrh62RrPUxxv1sLN25N3ty62bgPcPnl9hqR/
+3zbC3XNH1rnxW+RmuHtrXMUPrlm4Be6fx3GNgt9ObIX7t8t6lbfW6W3w8Aiv
+ffnPbMl2eHid5k5+uD5gBzw8J3y6vvDO2R37YeG9vOP+o8OSO+HxAYmfnftl
+rsaWLeNaAJc3myAnv+XuTLj+xcenbN56YzLc/IDQVnU72x64/Xs6D9bJ9TbC
+3VfA+nXOaYN8uPsZvP+/rj5ivR/mvw8fD0+9PLdgP8z/EYosnZoXavbDwucA
+95P3rILN+2Hh57OmRPCtWdt+WPgaXLvdJHK2fT8s/GF8WPzA1MPiD2YeLH5h
+9sHiH+YeWPqAuReWfmD+gaUvmH9h6Q8WHrD0CQsvWPqFhScsfcPCG5b+0fMH
+AK5ooPk=
+          "],
+          VertexColors->{
+            Hue[0.014999999999999977`, 0.7299999999999999, 1, 1], 
+            Hue[0.014999999999999977`, 0.7299999999999999, 1, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.9560466363294806, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.912266736504987, 1], 
+            
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8688330797899928, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8259170789846016, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7836881039375367, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7423128131207255, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7019544959044491, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6627724281287992, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6249212435147024, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5885503233952688, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5538032071759174, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5208170258499181, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.48972196080501196`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4606407300569476, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4336881039375369, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4089704521485895, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.38658532396929557`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3666210632737864, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.34915645987822397`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3342604385933926, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.32199178720995825`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3123989244899179, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3055197090798655, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.30138129010021, 1], 
+            Hue[0.014999999999999977`, 0.7299999999999999, 0.3, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.30138129010021, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3055197090798655, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3123989244899179, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.32199178720995825`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3342604385933926, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.34915645987822397`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.3666210632737864, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.38658532396929557`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4089704521485895, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4336881039375369, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.4606407300569476, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.48972196080501196`, 
+             1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5208170258499181, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5538032071759174, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.5885503233952688, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6249212435147024, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.6627724281287992, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7019544959044491, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7423128131207255, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.7836881039375367, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8259170789846016, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.8688330797899928, 1], 
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.912266736504987, 1], 
+            
+            Hue[
+            0.014999999999999977`, 0.7299999999999999, 0.9560466363294806, 1], 
+            Hue[0.014999999999999977`, 0.7299999999999999, 1, 1]}]},
+        DynamicBox[
+         ToBoxes[
+          Rational[49967, 180], StandardForm]]],
+       Annotation[#, 
+        Dynamic[
+         Rational[49967, 180]], "Tooltip"]& ]}], {{{1, 0}, {0, 1}}, {0, 
+     0}}], {}, GeometricTransformationBox[{}, {{{0, -1}, {1, 0}}, {0, 0}}]},
+  AlignmentPoint->Center,
+  AspectRatio->Automatic,
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->{},
+  BaselinePosition->Automatic,
+  ColorOutput->Automatic,
+  ContentSelectable->Automatic,
+  CoordinatesToolOptions:>Automatic,
+  DisplayFunction->Identity,
+  Epilog->{},
+  FormatType->TraditionalForm,
+  Frame->False,
+  FrameLabel->None,
+  FrameStyle->{},
+  FrameTicks->Automatic,
+  FrameTicksStyle->{},
+  GridLines->None,
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->Small,
+  ImageSizeRaw->Automatic,
+  LabelStyle->{},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
+  PlotLabel->None,
+  PlotRange->All,
+  PlotRangeClipping->False,
+  PlotRangePadding->Automatic,
+  PlotRegion->Automatic,
+  PreserveImageOptions->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{
+  3.726476273018099*^9},ExpressionUUID->"518cf4b2-097c-4440-ab1b-\
+597ff7f412b4"]
+}, Open  ]],
+
+Cell[BoxData["Range"], "Input",
+ CellChangeTimes->{{3.7264743439637003`*^9, 
+  3.7264743453691807`*^9}},ExpressionUUID->"21c8ee08-e4d0-4225-88f1-\
+510291bce2c6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+     FractionBox["49967", "180"], ",", "\"\<Kelvins\>\""}], "]"}], ",", 
+   "\"\<fahrenheit\>\""}], "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"5d62d034-908f-4c0e-b84d-bd104e31128e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "40","\"\[Degree]F\"","degrees Fahrenheit","\"DegreesFahrenheit\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.72647335565491*^9},ExpressionUUID->"4b7c91d7-86f3-44f1-862f-820166ec74b0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", 
+    RowBox[{"t", ",", "\"\<DegreesFahrenheit\>\""}], "]"}], ",", 
+   "\"\<Kelvin\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.726473315684712*^9, 3.726473316493375*^9}},
+ NumberMarks->False,ExpressionUUID->"7c85bf7b-b8f5-411b-a6f9-17ff25641289"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TeXForm", "[", 
+  TemplateBox[{RowBox[{
+      FractionBox["5", "9"], " ", 
+      RowBox[{"(", 
+        RowBox[{
+          FractionBox["45967", "100"], "+", "t"}], ")"}]}],"\"K\"","kelvins",
+    "\"Kelvins\""},
+   "Quantity"], "]"}]], "Input",
+ CellChangeTimes->{{3.726473418255891*^9, 
+  3.726473428417107*^9}},ExpressionUUID->"c57e07f7-6f88-45fc-b4bf-\
+7155c621c579"],
+
+Cell["\<\
+\\frac{5}{9}
+   \\left(t+\\frac{45967}{100}\\r
+   ight)\\text{K}\
+\>", "Output",
+ CellChangeTimes->{
+  3.726473429243425*^9},ExpressionUUID->"4d9d596b-503f-4cda-8c39-\
+5ebdfa710dc5"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>2. Inherited,
+FrontEndVersion->"11.1 for Linux x86 (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 266, 6, 66, "Input", "ExpressionUUID" -> \
+"9f351876-56ab-4898-b0c9-663aaf9003cd"],
+Cell[849, 30, 216, 5, 102, "Output", "ExpressionUUID" -> \
+"21185427-d19d-4055-b199-3533ec12ad3e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1102, 40, 250, 6, 97, "Input", "ExpressionUUID" -> \
+"ce53b26c-14a3-4c9f-93f3-824af60ce884"],
+Cell[1355, 48, 155, 4, 90, "Output", "ExpressionUUID" -> \
+"fbe4497c-e2f8-4f08-955e-5d5c6e3ff11f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1547, 57, 599, 14, 109, "Input", "ExpressionUUID" -> \
+"4e5d413b-6be6-4848-b74d-b70cc195611f"],
+Cell[2149, 73, 13510, 292, 462, "Output", "ExpressionUUID" -> \
+"f6d31fe6-3733-4a01-9a94-21fa54575751"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15696, 370, 332, 7, 66, "Input", "ExpressionUUID" -> \
+"f42f4815-b5f4-4ec2-aae7-355b65dc9d1e"],
+Cell[16031, 379, 219, 5, 102, "Output", "ExpressionUUID" -> \
+"0ae09b2c-152c-4f4c-9562-46a41b45b180"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16287, 389, 251, 6, 97, "Input", "ExpressionUUID" -> \
+"adb88229-57cd-4858-91fb-d836b5991f06"],
+Cell[16541, 397, 156, 4, 90, "Output", "ExpressionUUID" -> \
+"cd2742f8-7adc-472f-8aa5-e286a75de962"]
+}, Open  ]],
+Cell[16712, 404, 390, 11, 97, "Input", "ExpressionUUID" -> \
+"b8af9290-a036-44c8-9cc7-12c21ad90309"],
+Cell[CellGroupData[{
+Cell[17127, 419, 256, 7, 97, "Input", "ExpressionUUID" -> \
+"ada4dc01-a013-47ff-83de-be874be4f4bb"],
+Cell[17386, 428, 160, 4, 90, "Output", "ExpressionUUID" -> \
+"178085f1-abfa-4630-b7cc-9721999aa902"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17583, 437, 183, 4, 97, "Input", "ExpressionUUID" -> \
+"df6c8b9a-d27e-4547-aeae-e728e15ab3e6"],
+Cell[17769, 443, 170, 4, 66, "Output", "ExpressionUUID" -> \
+"750eac56-aa81-41cd-998c-fa76cef775a9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17976, 452, 557, 14, 109, "Input", "ExpressionUUID" -> \
+"56b276c5-ffa1-477b-b462-3150d494d796"],
+Cell[18536, 468, 13506, 292, 462, "Output", "ExpressionUUID" -> \
+"518cf4b2-097c-4440-ab1b-597ff7f412b4"]
+}, Open  ]],
+Cell[32057, 763, 161, 3, 66, "Input", "ExpressionUUID" -> \
+"21c8ee08-e4d0-4225-88f1-510291bce2c6"],
+Cell[CellGroupData[{
+Cell[32243, 770, 289, 7, 97, "Input", "ExpressionUUID" -> \
+"5d62d034-908f-4c0e-b84d-bd104e31128e"],
+Cell[32535, 779, 224, 5, 66, "Output", "ExpressionUUID" -> \
+"4b7c91d7-86f3-44f1-862f-820166ec74b0"]
+}, Open  ]],
+Cell[32774, 787, 331, 7, 66, "Input", "ExpressionUUID" -> \
+"7c85bf7b-b8f5-411b-a6f9-17ff25641289"],
+Cell[CellGroupData[{
+Cell[33130, 798, 392, 11, 109, "Input", "ExpressionUUID" -> \
+"c57e07f7-6f88-45fc-b4bf-7155c621c579"],
+Cell[33525, 811, 192, 7, 142, "Output", "ExpressionUUID" -> \
+"4d9d596b-503f-4cda-8c39-5ebdfa710dc5"]
+}, Open  ]]
+}
+]
+*)
+
